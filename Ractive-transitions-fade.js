@@ -5,7 +5,21 @@
 
 	Version 0.1.0.
 
-	<< description goes here... >>
+	This plugin does exactly what it says on the tin - it fades elements
+	in and out, using CSS transitions. You can control the following
+	properties: `duration`, `delay` and `easing` (which must be a valid
+	CSS transition timing function, and defaults to `linear`).
+
+	The `duration` property is in milliseconds, and defaults to 300 (you
+	can also use `fast` or `slow` instead of a millisecond value, which
+	equate to 200 and 600 respectively). As a shorthand, you can use
+	`intro='fade:500'` instead of `intro='fade:{"duration":500}'` - this
+	applies to many other transition plugins as well.
+
+	If an element has an opacity other than 1 (whether directly, because
+	of an inline style, or indirectly because of a CSS rule), it will be
+	respected. You can override the target opacity of an intro fade by
+	specifying a `to` property between 0 and 1.
 
 	==========================
 
@@ -26,7 +40,9 @@
 	    // the return value
 	    require( 'Ractive-transitions-fade' );
 
-	<< more specific instructions for this plugin go here... >>
+	Add a fade transition like so:
+
+	    <div intro='fade'>this will fade in</div>
 
 */
 
