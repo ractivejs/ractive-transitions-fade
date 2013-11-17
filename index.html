@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+	<meta charset='utf-8'>
+	<title>Ractive.js fade transition plugin</title>
+
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='demo/main.css'>
+
+	<style type='text/css'>
+		#demo {
+			height: 12em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- if the project is on GitHub, add a fork me button! -->
+	<a class='forkme' href='https://github.com/RactiveJS/Ractive-transitions-fade'>Fork me on GitHub</a>
+
+	<header>
+		<h1>Ractive.js fade transition plugin</h1>
+		<p class='strap'>
+			<span class='download'>download: <a href='https://raw.github.com/RactiveJS/Ractive-transitions-fade/master/Ractive-transitions-fade.js'>Ractive-transitions-fade.js</a></span>
+			<span class='more-plugins'>more plugins at <a href='http://ractivejs.org/plugins'>ractivejs.org/plugins</a></span>
+		</p>
+	</header>
+
+	<main>
+		<p>This plugin does exactly what it says on the tin &ndash; it fades elements in and out, using CSS transitions. You can control the following properties: <code>duration</code>, <code>delay</code> and <code>easing</code> (which must be a valid <a href='http://cubic-bezier.com/#.17,.67,.83,.67'>CSS transition timing function</a>, and defaults to <code>linear</code>).</p>
+
+		<p>The <code>duration</code> property is in milliseconds, and defaults to 300 (you can also use <code>fast</code> or <code>slow</code> instead of a millisecond value, which equate to 200 and 600 respectively). As a shorthand, you can use <code>intro='fade:500'</code> instead of <code>intro='fade:{"duration":500}'</code> &ndash; this applies to many other transition plugins as well.</p>
+
+		<p>If an element has an opacity other than 1 (whether directly, because of an inline style, or indirectly because of a CSS rule), it will be respected. You can override the target opacity of an intro fade by specifying a <code>to</code> property between 0 and 1.</p>
+
+		<div id='demo' class='clearfix'></div>
+
+		<pre id='demo-template-view' class='prettyprint lang-html'></pre>
+		<pre id='demo-code-view' class='prettyprint lang-js'></pre>
+	</main>
+
+	<!-- add additional info such as your homepage here, if you want -->
+	<footer>
+		<p>Copyright &copy; 2013 Rich Harris. Licensed MIT</p>
+	</footer>
+
+	<!-- Demo template -->
+	<script id='demo-template' type='text/ractive'>
+		<h2 intro-outro='fade:2000'>Any element can be faded in...</h2>
+
+		<p outro='fade'>{{#words:i}}
+			<span intro='fade:{ "delay":{{ i*400 }}, "duration":{{ i*200 }} }'>{{this}}</span>
+		{{/words}}</p>
+
+		{{#showButton}}
+			<button on-click='reset' intro-outro='fade'>Show me again!</button>
+		{{/showButton}}
+
+	</script>
+
+	<!-- Dependencies -->
+	<script src='lib/Ractive-legacy.js'></script>
+	<script src='Ractive-transitions-fade.js'></script>
+
+	<!-- Demo code -->
+	<script id='demo-code'>
+		var render = function () {
+			ractive = new Ractive({
+				el: 'demo',
+				template: '#demo-template'
+			});
+
+			// Add some words, then show the reset button
+			ractive.set( 'words', '...fades can be staggered, and their durations can be controlled'.split( ' ' ), function () {
+				this.set( 'showButton', true );
+			});
+
+			ractive.on( 'reset', function () {
+				// Teardown, then re-render once fadeouts are complete
+				ractive.teardown( render );
+			});
+		};
+
+		render();
+	</script>
+
+	<!-- Insert code into the page -->
+	<script src='demo/prettify.js'></script>
+	<script src='demo/demo.js'></script>
+</body>
+</html>
