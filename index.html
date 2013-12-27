@@ -50,18 +50,21 @@
 	<script id='demo-template' type='text/ractive'>
 		<h2 intro-outro='fade:2000'>Any element can be faded in...</h2>
 
-		<p outro='fade'>{{#words:i}}
-			<span intro='fade:{ "delay":{{ i*400 }}, "duration":{{ i*200 }} }'>{{this}}</span>
-		{{/words}}</p>
+		<p outro='fade'>
+			{{#words:i}}
+				<span intro='fade:{ delay:{{ i*400 }}, duration:{{ i*200 }} }'>{{this}}</span>
+			{{/words}}
+		</p>
 
 		{{#showButton}}
-			<button on-click='reset' intro-outro='fade'>Show me again!</button>
+			<button on-tap='reset' intro-outro='fade'>Show me again!</button>
 		{{/showButton}}
 
 	</script>
 
 	<!-- Dependencies -->
 	<script src='lib/Ractive-legacy.js'></script>
+	<script src='lib/Ractive-events-tap.js'></script>
 	<script src='Ractive-transitions-fade.js'></script>
 
 	<!-- Demo code -->

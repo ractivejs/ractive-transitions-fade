@@ -76,30 +76,24 @@
 	var fade, defaults;
 
 	defaults = {
+		delay: 0,
 		duration: 300,
 		easing: 'linear'
 	};
 
-	fade = function ( t ) {
+	fade = function ( t, params ) {
 		var targetOpacity;
 
+		params = t.processParams( params, defaults );
+
 		if ( t.isIntro ) {
-			targetOpacity = ( t.to !== undefined ? t.to : t.getStyle( 'opacity' ) );
+			targetOpacity = t.getStyle( 'opacity' );
 			t.setStyle( 'opacity', 0 );
+		} else {
+			targetOpacity = 0;
 		}
 
-		// set defaults
-		if ( t.duration === undefined ) {
-			t.duration = defaults.duration;
-		}
-
-		if ( t.easing === undefined ) {
-			t.easing = defaults.easing;
-		}
-
-		t.animateStyle({
-			opacity: t.isIntro ? targetOpacity : 0
-		});
+		t.animateStyle( 'opacity', targetOpacity, params, t.complete );
 	};
 
 	Ractive.transitions.fade = fade;
