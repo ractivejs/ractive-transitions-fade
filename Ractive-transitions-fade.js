@@ -3,7 +3,7 @@
 	Ractive-transitions-fade
 	========================
 
-	Version 0.1.0.
+	Version 0.1.1.
 
 	This plugin does exactly what it says on the tin - it fades elements
 	in and out, using CSS transitions. You can control the following
