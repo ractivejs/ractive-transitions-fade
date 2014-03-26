@@ -11,15 +11,15 @@ Usage
 Include this file on your page below Ractive, e.g:
 
 ```html
-<script src='lib/Ractive.js'></script>
-<script src='lib/Ractive-transitions-fade.js'></script>
+<script src='lib/ractive.js'></script>
+<script src='lib/ractive-transitions-fade.js'></script>
 ```
 
 Or, if you're using a module loader, require this module:
 
 ```js
 // requiring the plugin will 'activate' it - no need to use the return value
-require( 'Ractive-transitions-fade' );
+require( 'ractive-transitions-fade' );
 ```
 
 **plugin-specific instructions to go here...**
@@ -31,4 +31,4 @@ License
 
 Copyright (c) 2013 Rich Harris. Licensed MIT
 
-Created with the [Ractive.js plugin template](https://github.com/RactiveJS/Plugin-template) for Grunt.
+Created with the [Ractive.js plugin template](https://github.com/ractivejs/plugin-template) for Grunt.

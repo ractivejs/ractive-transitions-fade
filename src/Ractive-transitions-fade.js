@@ -1,9 +1,9 @@
 /*
 
-	Ractive-transitions-fade
+	ractive-transitions-fade
 	========================
 
-	Version <%= VERSION %>.
+	Version <%= pkg.version %>.
 
 	This plugin does exactly what it says on the tin - it fades elements
 	in and out, using CSS transitions. You can control the following
@@ -31,14 +31,14 @@
 
 	Usage: Include this file on your page below Ractive, e.g:
 
-	    <script src='lib/Ractive.js'></script>
-	    <script src='lib/Ractive-transitions-fade.js'></script>
+	    <script src='lib/ractive.js'></script>
+	    <script src='lib/ractive-transitions-fade.js'></script>
 
 	Or, if you're using a module loader, require this module:
 
 	    // requiring the plugin will 'activate' it - no need to use
 	    // the return value
-	    require( 'Ractive-transitions-fade' );
+	    require( 'ractive-transitions-fade' );
 
 	Add a fade transition like so:
 
@@ -52,12 +52,12 @@
 
 	// Common JS (i.e. browserify) environment
 	if ( typeof module !== 'undefined' && module.exports && typeof require === 'function' ) {
-		factory( require( 'Ractive' ) );
+		factory( require( 'ractive' ) );
 	}
 
 	// AMD?
 	else if ( typeof define === 'function' && define.amd ) {
-		define([ 'Ractive' ], factory );
+		define([ 'ractive' ], factory );
 	}
 
 	// browser global
@@ -66,7 +66,7 @@
 	}
 
 	else {
-		throw new Error( 'Could not find Ractive! It must be loaded before the Ractive-transitions-fade plugin' );
+		throw new Error( 'Could not find Ractive! It must be loaded before the ractive-transitions-fade plugin' );
 	}
 
 }( typeof window !== 'undefined' ? window : this, function ( Ractive ) {

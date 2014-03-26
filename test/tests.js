@@ -1,5 +1,5 @@
-// Ractive-transitions-fade tests
-// ========================
+// ractive-transitions-fade tests
+// ==============================
 
 (function () {
 

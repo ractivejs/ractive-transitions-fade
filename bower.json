@@ -2,7 +2,7 @@
 	"name": "ractive-transitions-fade",
 	"version": "0.1.1",
 	"author": "Rich Harris",
-	"main": "Ractive-transitions-fade.js",
+	"main": "ractive-transitions-fade.js",
 	"ignore": [
 		"**/.*",
 		"src",
