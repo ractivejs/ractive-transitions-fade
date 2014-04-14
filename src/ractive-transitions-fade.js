@@ -93,7 +93,7 @@
 			targetOpacity = 0;
 		}
 
-		t.animateStyle( 'opacity', targetOpacity, params, t.complete );
+		t.animateStyle( 'opacity', targetOpacity, params ).then( t.complete );
 	};
 
 	Ractive.transitions.fade = fade;
