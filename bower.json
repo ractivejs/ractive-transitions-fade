@@ -1,12 +1,10 @@
 {
 	"name": "ractive-transitions-fade",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "Rich Harris",
 	"main": "ractive-transitions-fade.js",
 	"ignore": [
-		"**/.*",
-		"src",
-		"test",
-		"Gruntfile.js"
+		"**",
+		"!ractive-transitions-fade.js"
 	]
 }
