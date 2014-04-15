@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g grunt-cli; chmod u+x scripts/deploy-to-gh-pages.sh; grunt
+script: ./scripts/deploy-to-gh-pages.sh
+env:
+  global:
+  - GH_REF: github.com/ractivejs/ractive-transitions-fade.git
+  - secure: ZMvBlx3QwICKBNS9kjOtGm81Kf8Le1lVA1UAMU8LWV5ujPIJcYJQKV1Vvt05XXbTgMkAWvOrp5QUZJCQMPx7+vVwo3B8AN9ANYsUQ2PcWC6EtKQvH/aIhyhgxIdyFQmecKtg9glc4sgcYMGKoSGdkH5a+sJ3XuY8UJ7AbxzYRSs=
+branches:
+  only:
+    - master
