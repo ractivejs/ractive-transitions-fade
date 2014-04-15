@@ -5,6 +5,7 @@
 	"main": "ractive-transitions-fade.js",
 	"ignore": [
 		".git/",
+		".*",
 		"demo/",
 		"grunt/",
 		"lib/",
