@@ -4,7 +4,17 @@
 	"author": "Rich Harris",
 	"main": "ractive-transitions-fade.js",
 	"ignore": [
-		"**",
-		"!ractive-transitions-fade.js"
+		".git/",
+		"demo/",
+		"grunt/",
+		"lib/",
+		"src/",
+		"test/",
+		".gitignore",
+		"*.json",
+		"Gruntfile.js",
+		"index.html",
+		"ractive-transitions-fade.min.js",
+		"README.md"
 	]
 }
