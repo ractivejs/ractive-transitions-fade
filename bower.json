@@ -8,6 +8,7 @@
 		"demo/",
 		"grunt/",
 		"lib/",
+		"scripts/",
 		"src/",
 		"test/",
 		".gitignore",
