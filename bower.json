@@ -3,6 +3,12 @@
 	"version": "0.1.2",
 	"author": "Rich Harris",
 	"main": "ractive-transitions-fade.js",
+	"dependencies": {
+		"ractive": "~0.4.0"
+	},
+	"devDependencies": {
+		"ractive-events-tap": "~0.1.1"
+	},
 	"ignore": [
 		".git/",
 		".*",
