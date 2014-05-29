@@ -9,5 +9,5 @@
 	},
 	"development": {},
 	"license": "MIT",
-	"main": "ractive-transitions-fade.js"
+	"scripts": ["ractive-transitions-fade.js"]
 }
