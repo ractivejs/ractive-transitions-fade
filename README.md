@@ -5,7 +5,7 @@ Ractive.js fade transition plugin
 
 [See the demo here.](TODO)
 
-## Usage
+Usage
 -----
 
 Include this file on your page below Ractive, e.g:
