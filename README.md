@@ -5,7 +5,7 @@ Ractive.js fade transition plugin
 
 [See the demo here.](TODO)
 
-Usage
+## Usage
 -----
 
 Include this file on your page below Ractive, e.g:
@@ -21,6 +21,14 @@ Or, if you're using a module loader, require this module:
 // requiring the plugin will 'activate' it - no need to use the return value
 require( 'ractive-transitions-fade' );
 ```
+
+To get `ractive-transitions-fade.min.js` you can:
+
+- Use CDN: `//cdn.jsdelivr.net/ractive.transitions-fade/latest/ractive-transitions-fade.min.js`.
+- Use bower: `$ bower i ractive-transitions-fade`.
+- [Download the latest release](https://github.com/ractivejs/ractive-transitions-fade/releases).
+- Clone the repo: `$ git clone https://github.com/ractivejs/ractive-transitions-fade.git`.
+
 
 **plugin-specific instructions to go here...**
 
