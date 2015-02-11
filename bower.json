@@ -1,28 +1,14 @@
 {
 	"name": "ractive-transitions-fade",
-	"version": "0.1.2",
+	"version": "0.2.0-edge",
 	"author": "Rich Harris",
 	"main": "ractive-transitions-fade.js",
-	"dependencies": {
-		"ractive": "~0.4.0"
-	},
-	"devDependencies": {
-		"ractive-events-tap": "~0.1.1"
-	},
 	"ignore": [
-		".git/",
 		".*",
-		"demo/",
-		"grunt/",
-		"lib/",
-		"scripts/",
-		"src/",
-		"test/",
-		".gitignore",
 		"*.json",
-		"Gruntfile.js",
-		"index.html",
-		"ractive-transitions-fade.min.js",
-		"README.md"
+		"node_modules",
+		"demo",
+		"scripts",
+		"test"
 	]
 }
