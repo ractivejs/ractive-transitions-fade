@@ -9,7 +9,8 @@
 		delay: 0,
 		duration: 300,
 		easing: "linear"
-	};function fade(t, params) {
+	};
+	function fade(t, params) {
 		var targetOpacity;
 
 		params = t.processParams(params, DEFAULTS);
