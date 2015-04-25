@@ -1,3 +1,4 @@
 .DS_Store
+.gobble*
 node_modules/
 tmp/
