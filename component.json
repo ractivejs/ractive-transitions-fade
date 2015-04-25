@@ -2,7 +2,7 @@
 	"name": "ractive-transitions-fade",
 	"repo": "ractivejs/ractive-transitions-fade",
 	"description": "ractive-transitions-fade",
-	"version": "0.2.0-edge",
+	"version": "0.2.1",
 	"keywords": [],
 	"license": "MIT",
 	"main": "dist/ractive-transitions-fade.js",
