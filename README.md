@@ -1,6 +1,6 @@
 # ractive-transitions-fade
 
-*Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
+*Find more Ractive.js plugins at [http://docs.ractivejs.org/latest/plugins](http://docs.ractivejs.org/latest/plugins)*
 
 This transition fades an element in and out of view, using CSS transitions where possible.
 
