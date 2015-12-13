@@ -1,4 +1,4 @@
-const DEFAULTS = {
+var DEFAULTS = {
 	delay: 0,
 	duration: 300,
 	easing: 'linear'

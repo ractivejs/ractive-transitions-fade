@@ -4,7 +4,7 @@
 	global.Ractive.transitions.fade = factory();
 }(this, function () { 'use strict';
 
-	const DEFAULTS = {
+	var DEFAULTS = {
 		delay: 0,
 		duration: 300,
 		easing: 'linear'
