@@ -1,5 +1,9 @@
 # changelog
 
+## 0.3.0
+
+* Transpile jsnext:main version
+
 ## 0.2.1
 
 * Add minified version to distribution
